@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card
+    </title>
+    <style>
+        body{
+            display: block;
+            width: 50%;
+            margin: 10rem auto;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+        .parent{
+            margin: 0 auto;
+            background-color: black;
+            height: 50%;
+            box-shadow: 2rem black;
+        }
+        .flex-items{
+            background-color: white;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            
+        }
+        .flex-container{
+            display: flex;
+            height: 200px;
+            height: 50%;
+        }
+        button{
+            display: block;
+            background-color: greenyellow;
+            padding:5px;
+            border-radius: 5px;
+            width: 100px;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 75%;
+            height: 2.5rem;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+        .head{
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+            font-weight: 500;
+            color: darkcyan;
+        }
+        .sub-head{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            
+        }
+        .sub-desc{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: small;
+            font-weight: 500;
+            color: grey;
+        }
+        .price{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: x-large;
+            margin: 0;
+        }
+        #top{
+            
+        }
+        #left{
+            background-color: #2F8F9D;
+            background-color: #2BB3AF;
+            color: white;
+            flex-basis: 50%
+            
+        }
+        #right{
+            background-color: #4ABEBD; 
+            color: white;
+            flex-basis: 50%;
+            padding-right: 8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        
+        <div class="flex-container">
+            <div class="flex-items" id="top"><p class="head">Join our community!</p>
+            <p class="sub-head" style="color: #38E54D;">30 day money back guarantee.</p>
+        <p class="sub-desc"> Gain access to our full library of tutorials along with expert code reviews.</p>
+        <p class="sub-desc"> Perfect for all developers who are serious about honing their skills.</p> 
+    </div>
+        </div>
+        <div class="flex-container">
+
+            <div id ="left" class="flex-items"><p class="sub-head">Monthly Subscription</p>
+            <p class="price">$29<span class="sub-desc" style="padding-left: 5px; color: azure; font-weight: 200;">per month</span></p>
+            <button type="button"> Sign Up </button>
+        </div>
+            <div class="flex-items" id="right">
+                <p class="sub-head">Why us?</p><p class="sub-desc" style="color: white; line-height: 1.5rem;">Tutorials, by industry experts, Peer and expert code review. Coding excercises. Access to our Github repos, community forums.</p></div>
+        </div>
+    </div>
+</body>
+</html>
